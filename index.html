@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jasmine's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <header>
+    <nav class="container">
+      <h1>Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="toggle-theme">🌙</button>
+    </nav>
+  </header>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I am JASMINE,a Frontend Developer skilled in HTML, CSS, JavaScript, React.js. I have experience working on real-world projects like a University Management System and a Smart Virtual Assistant.</p>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/university.jpg" alt="University Management System" />
+        <h3>University Management System</h3>
+        <p>Java-based system using Swing and MySQL to manage students, courses, and faculty data efficiently.</p>
+      </div>
+      <div class="project-card">
+        <img src="images/Shifra.jpg" alt="Smart Virtual Assistant" />
+        <h3>Smart Virtual Assistant</h3>
+        <p>React.js-based virtual assistant integrated with Gemini AI to answer user queries in real time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <h3>Responses:</h3>
+    <div id="responseList"></div>
+  </section>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
